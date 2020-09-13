@@ -25,11 +25,10 @@ void StateManager::setState(State* state) {
     this->current_state = state;
 }
 
-/*StateManager* StateManager::getInstance() {
+StateManager* StateManager::getInstance() {
     if (_instance == nullptr) {
         _instance = new StateManager();
     }
 
     return _instance;
 }
-*/

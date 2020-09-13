@@ -1,4 +1,5 @@
-#pragma once
+#ifndef STATE_H
+#define STATE_H
 
 class State {
 public:
@@ -11,3 +12,5 @@ public:
 private:
     int _id;
 };
+
+#endif

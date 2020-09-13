@@ -1,4 +1,6 @@
-#pragma once
+#ifndef STATE_MANAGER_H
+#define STATE_MANAGER_H
+
 #include "state.h"
 
 class StateManager {
@@ -9,13 +11,7 @@ public:
     void render();
 
     void setState(State* state);
-    StateManager* getInstance() {
-        if (!_instance) {
-            _instance = new StateManager();
-        }
-
-        return _instance;
-    }
+    static StateManager* getInstance();
 
 protected:
     StateManager();
@@ -23,3 +19,5 @@ protected:
     State* current_state;
     static StateManager* _instance;
 };
+
+#endif
