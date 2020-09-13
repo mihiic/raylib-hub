@@ -354,7 +354,7 @@ ifeq ($(PLATFORM),PLATFORM_WEB)
 endif
 
 # Define all source files required
-PROJECT_SOURCE_FILES ?= simple_game.cpp src/state_handler/state_manager.h src/state_handler/state_manager.cpp src/state_handler/state.h src/state_handler/state.cpp
+PROJECT_SOURCE_FILES ?= simple_game.cpp src/state_handler/state_manager.h src/state_handler/state_manager.cpp src/state_handler/state.h src/state_handler/state.cpp src/states/test_state.h src/states/test_state.cpp
 
 # Define all object files from source files
 OBJS = $(patsubst %.c, %.o, $(PROJECT_SOURCE_FILES))

@@ -2,6 +2,7 @@
 #include <iostream>
 
 #include "src/state_handler/state_manager.h"
+#include "src/states/test_state.h"
 
 int main(void)
 {
@@ -9,6 +10,9 @@ int main(void)
     SetTargetFPS(60);
 
     StateManager* stateManager = StateManager::getInstance();
+
+    /*State* currentState = new TestState();
+    stateManager->setState(currentState);*/
 
     while (!WindowShouldClose())
     {
